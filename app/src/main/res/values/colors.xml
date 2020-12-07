@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#c68400</color>
     <color name="colorAccent">#FF3300</color>
     <color name="colorOnPrimary">#000000</color>
-    <color name="colorField">#FFF7E6</color>
     <color name="textColor">#A88C66</color>
+    <color name="colorField">#FFF7E6</color>
+    <color name="outlineField">#DAC9A6</color>
 </resources>

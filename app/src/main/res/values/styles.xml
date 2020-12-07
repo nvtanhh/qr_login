@@ -12,11 +12,8 @@
 
     <style name="bio_text" parent="normal_text">
         <item name="android:gravity">center</item>
-        <item name="height">2dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
         <item name="android:textStyle">normal</item>
-    </style>
-
-    <style name="welcome" parent="h1">
     </style>
 
     <style name="normal_text" parent="Widget.MaterialComponents.TextView">
@@ -32,7 +29,7 @@
     <style name="button">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/colorOnPrimary</item>
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">18sp</item>
         <item name="backgroundColor">?attr/colorPrimary</item>
         <item name="android:paddingVertical" tools:targetApi="o">10sp</item>
     </style>
@@ -42,7 +39,49 @@
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">#707070</item>
         <item name="backgroundTint">@color/colorField</item>
-        <item name="android:paddingVertical" tools:targetApi="o">10sp</item>
+        <item name="android:paddingVertical" tools:targetApi="o">15sp</item>
+    </style>
+
+    <style name="hero" parent="h1">
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="inputField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/colorField</item>
+        <item name="boxStrokeColor">@color/text_input_box_stroke</item>
+        <item name="hintEnabled">false</item>
+        <item name="android:layout_marginBottom">15sp</item>
+    </style>
+
+    <style name="inputField2" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxBackgroundColor">@color/colorField</item>
+        <item name="boxStrokeColor">@color/text_input_box_stroke</item>
+        <item name="hintEnabled">false</item>
+        <item name="android:layout_marginBottom">15sp</item>
+    </style>
+
+    <style name="inputField3" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+        <item name="boxBackgroundColor">@color/colorField</item>
+        <item name="boxStrokeColor">@color/text_input_box_stroke</item>
+        <item name="hintEnabled">false</item>
+        <item name="android:layout_marginBottom">15sp</item>
+    </style>
+
+    <style name="label">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginLeft">10sp</item>
+        <item name="android:layout_marginBottom">5sp</item>
+    </style>
+
+    <style name="caption">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="cardInfo" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardForegroundColor">@android:color/transparent</item>
+        <item name="cardCornerRadius">15sp</item>
+        <item name="cardElevation">4dp</item>
     </style>
 
 

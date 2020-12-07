@@ -2,4 +2,6 @@
     <string name="app_name">QR Login</string>
     <string name="welcome">Welcome to QRLogin</string>
     <string name="bio">You can choose LOGIN by your QR code "\n"OR"\n" SIGN UP if you\'r new</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
