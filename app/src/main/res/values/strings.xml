@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">QR Login</string>
+    <string name="welcome">Welcome to QRLogin</string>
+    <string name="bio">You can choose LOGIN by your QR code "\n"OR"\n" SIGN UP if you\'r new</string>
+</resources>
