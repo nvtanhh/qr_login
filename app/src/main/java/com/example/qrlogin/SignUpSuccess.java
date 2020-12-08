@@ -25,7 +25,6 @@ public class SignUpSuccess extends Fragment {
     private String mParam2;
 
     public SignUpSuccess() {
-        // Required empty public constructor
     }
 
     /**
@@ -54,6 +53,7 @@ public class SignUpSuccess extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

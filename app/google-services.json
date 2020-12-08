@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "590174649132",
+    "project_id": "qr-code-login-system",
+    "storage_bucket": "qr-code-login-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590174649132:android:1eb52fcf167b2c15dc0a89",
+        "android_client_info": {
+          "package_name": "com.example.qrlogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590174649132-6qgpim0ehnd9tombvlqab30r30ghlrl0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf88cv2paw6S-2nnOA8LJ6UVEmPIRvXZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "590174649132-6qgpim0ehnd9tombvlqab30r30ghlrl0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

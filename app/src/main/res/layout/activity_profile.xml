@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingHorizontal="16dp"
+            android:paddingHorizontal="20dp"
             android:paddingTop="80dp"
             android:paddingBottom="16dp">
 
@@ -178,15 +178,15 @@
                         <com.google.android.material.textfield.TextInputLayout
                             style="@style/inputField3"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            tools:ignore="HardcodedText">
+                            android:layout_height="wrap_content">
 
                             <com.google.android.material.textfield.MaterialAutoCompleteTextView
                                 android:id="@+id/gender_dropdown"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content" />
-
+                                android:layout_height="wrap_content"
+                                android:inputType="none" />
                         </com.google.android.material.textfield.TextInputLayout>
+
                     </LinearLayout>
                 </TableRow>
             </TableLayout>
@@ -215,7 +215,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_marginHorizontal="30dp"
-        android:layout_marginBottom="30sp"
+        android:layout_marginBottom="35sp"
         android:background="@drawable/button_shape"
         android:text="SIGN UP"
         tools:ignore="HardcodedText" />

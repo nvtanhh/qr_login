@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        android:paddingHorizontal="30sp"
+        android:paddingVertical="30sp"
+        tools:ignore="UselessParent">
+
+
+        <TextView
+            style="@style/hero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Sign Up\nSuccessfully"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <TextView
+            style="@style/h1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:layout_marginBottom="10dp"
+            android:text="Your QR code"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            style="@style/bio_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You may need to save it for Signing In"
+            tools:ignore="HardcodedText" />
+
+        <ImageView
+            android:id="@+id/img_qr_code"
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="70sp"
+            android:src="@drawable/img_qr_code"
+            tools:ignore="ContentDescription" />
+
+
+        <LinearLayout
+            android:id="@+id/save_qr_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5sp"
+                android:src="@drawable/ic_save"
+                app:tint="@color/colorPrimary"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/bio_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save to gallery"
+                android:textColor="@color/colorPrimary"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/go_back"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100sp"
+            android:background="@drawable/button_shape"
+            android:text="COME BACK"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</FrameLayout>
