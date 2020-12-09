@@ -47,24 +47,25 @@
         <item name="boxBackgroundColor">@color/colorField</item>
         <item name="boxStrokeColor">@color/text_input_box_stroke</item>
         <item name="errorTextColor">@color/colorAccent</item>
+        <item name="errorEnabled">true</item>
         <item name="errorIconTint">@color/colorAccent</item>
         <item name="hintEnabled">false</item>
     </style>
 
     <style name="inputField2" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
-        <item name="android:layout_height">10dp</item>
         <item name="boxBackgroundColor">@color/colorField</item>
         <item name="boxStrokeColor">@color/text_input_box_stroke</item>
         <item name="hintEnabled">false</item>
         <item name="errorTextColor">@color/colorAccent</item>
         <item name="errorIconTint">@color/colorAccent</item>
-        <!--        <item name="android:layout_marginBottom">5sp</item>-->
+        <item name="errorEnabled">true</item>
         <item name="materialThemeOverlay">@style/MyThemeOverlayOutlinedDense</item>
     </style>
 
 
     <style name="inputField3" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
         <item name="boxBackgroundColor">@color/colorField</item>
+        <item name="android:textColor">@color/textColor</item>
         <item name="boxStrokeColor">@color/text_input_box_stroke</item>
         <item name="errorTextColor">@color/colorAccent</item>
         <item name="errorIconTint">@color/colorAccent</item>
@@ -82,6 +83,7 @@
     <style name="MyAutoCompleteTextView_outlinedBox_dense_expose" parent="@style/Widget.MaterialComponents.AutoCompleteTextView.OutlinedBox.Dense">
         <item name="android:paddingTop">5dp</item>
         <item name="android:paddingBottom">5dp</item>
+        <item name="android:textColor">@color/textColor</item>
     </style>
 
     <style name="MyThemeOverlayOutlinedDense">
@@ -91,6 +93,7 @@
 
 
     <style name="MyTextInputEditText_outlinedBox_dense" parent="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+        <item name="android:textColor">@color/textColor</item>
         <item name="android:paddingTop">13dp</item>
         <item name="android:paddingBottom">13dp</item>
         <item name="singleLine">true</item>

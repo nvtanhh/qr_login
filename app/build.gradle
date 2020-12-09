@@ -48,8 +48,13 @@ dependencies {
     // Import the BoM for the Firebase platform
     implementation platform('com.google.firebase:firebase-bom:26.1.1')
     // Declare the dependency for the Firebase Authentication library
-    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-auth:20.0.1'
 //    QR code generator
     implementation 'com.google.zxing:core:3.4.1'
-
+//    scan qr code
+    implementation 'me.dm7.barcodescanner:zxing:1.9.13'
+//    Realtime Database
+    implementation 'com.google.firebase:firebase-database'
+// Json
+    implementation 'com.google.code.gson:gson:2.8.6'
 }

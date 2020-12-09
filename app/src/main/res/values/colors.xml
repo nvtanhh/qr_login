@@ -7,4 +7,5 @@
     <color name="textColor">#A88C66</color>
     <color name="colorField">#FFF7E6</color>
     <color name="outlineField">#DAC9A6</color>
+    <color name="colorFieldOpacity" >#B3FFF7E6</color>
 </resources>

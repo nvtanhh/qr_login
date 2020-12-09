@@ -22,6 +22,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.example.qrlogin.services.DBService;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
@@ -29,6 +31,7 @@ import com.google.zxing.qrcode.QRCodeWriter;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -57,6 +60,7 @@ public class AfterSignUp extends AppCompatActivity implements View.OnClickListen
         download = findViewById(R.id.save_qr_code);
         download.setOnClickListener(this);
         gobackBtn = findViewById(R.id.go_back);
+        gobackBtn.setOnClickListener(this);
         download.setOnClickListener(this);
     }
 

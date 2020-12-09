@@ -7,7 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.qrlogin.models.User;
 import com.google.firebase.FirebaseApp;
+import com.google.gson.Gson;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -15,12 +17,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Intent intent = new Intent(MainActivity.this, AfterSignUp.class);
-        String code = "kingtxx98@gmail.com" + "\r\n" + "tanh1998";
-        intent.putExtra("code", code);
-        startActivity(intent);
 
-//        setupButton();
+//        User user = new Gson().fromJson("{email=kingtxx98@gmail.com}",User.class);
+//        Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+//        intent.putExtra("user", user);
+//        startActivity(intent);
+
+        setupButton();
     }
 
     private void setupButton() {
@@ -36,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.login:
-                startActivity(new Intent(MainActivity.this, SignUpActivity.class));
+                startActivity(new Intent(MainActivity.this, LoginQrcode.class));
                 break;
             case R.id.sign_up:
                 startActivity(new Intent(MainActivity.this, SignUpActivity.class));

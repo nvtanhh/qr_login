@@ -1,6 +1,5 @@
 package com.example.qrlogin;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.example.qrlogin.models.User;
+import com.example.qrlogin.services.DBService;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputLayout;
@@ -19,6 +20,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -28,7 +30,6 @@ public class SignUpActivity extends AppCompatActivity {
 
     private Button signUpBtn;
     private TextInputLayout tfEmail, tfPass, tfRePass;
-    private AwesomeValidation awesomeValidation;
     LoadingDialog loadingDialog;
 
     @Override
@@ -66,6 +67,13 @@ public class SignUpActivity extends AppCompatActivity {
                             FirebaseUser user = mAuth.getCurrentUser();
                             Log.d(TAG, "createUserWithEmail:success ==> UserID = " + user.getUid());
 
+                            try {
+                                DBService db = new DBService();
+                                db.writeUser(new User(mAuth.getCurrentUser().getUid(), email));
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+
                             Intent intent = new Intent(SignUpActivity.this, AfterSignUp.class);
                             String code = email + "\r\n" + password;
                             intent.putExtra("code", code);
@@ -82,7 +90,6 @@ public class SignUpActivity extends AppCompatActivity {
                         // ...
                     }
                 });
-
     }
 
     private void showProgressBar() {
