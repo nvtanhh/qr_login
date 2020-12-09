@@ -3,7 +3,7 @@ This is my mobile application development homework at my school. The project usi
 
 ## Mockup
 ![plot](./design/qrlogin_mockup.png)
-See on Dribbble: https://dribbble.com/shots/14732521-QRCode-Login
+See on Dribbble: https://dribbble.com/shots/14732521-QRCode-Login  
 You can see more my design at: https://dribbble.com/kingtxx98
 
 ## Features:
